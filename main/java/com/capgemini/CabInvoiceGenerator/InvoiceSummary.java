@@ -17,8 +17,8 @@ public class InvoiceSummary {
 			return true;
 		if (Ob == null || getClass() != Ob.getClass())
 			return false;
-		InvoiceSummary rides = (InvoiceSummary) Ob;
-		return noOfRides == rides.noOfRides && Double.compare(rides.totalFare, totalFare) == 0
-				&& Double.compare(rides.averageFare, averageFare) == 0;
+		InvoiceSummary r = (InvoiceSummary) Ob;
+		return noOfRides == r.noOfRides && Double.compare(r.totalFare, totalFare) == 0
+				&& Double.compare(r.averageFare, averageFare) == 0;
 	}
 }
